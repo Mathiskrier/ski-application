@@ -12,7 +12,9 @@
   </head>
 
   <body>
+    <% if user_signed_in? %>
     <%= link_to "logout", destroy_user_session_path, data: {turbo_method: :delete}, class: "btn btn-default btn-sm" %>
+    <% end %>
     <!---this was the instruction for the notice and alert--->
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
