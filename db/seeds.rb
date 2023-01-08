@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+axamer = SkiSpot.create(location_name: 'Axamer Lizum')
+patscher = SkiSpot.create(location_name: 'Patscherkofel')
+nordkette = SkiSpot.create(location_name: 'Nordkette')
+glungezer = SkiSpot.create(location_name: 'Glungezer')
+schlick = SkiSpot.create(location_name: 'Schlick2000')
+seefeld = SkiSpot.create(location_name: 'Seefeld')
+kühtai = SkiSpot.create(location_name: 'Kühtai')
