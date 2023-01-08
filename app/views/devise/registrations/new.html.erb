@@ -4,6 +4,9 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
+  <!--I added below the first and last name--->
+    <%= f.input :first_name, required: true %>
+    <%= f.input :last_name, required: true %>
     <%= f.input :email,
                 required: true,
                 autofocus: true,
