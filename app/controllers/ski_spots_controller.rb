@@ -3,5 +3,6 @@ class SkiSpotsController < ApplicationController
     @spots = SkiSpot.all
   end
   def show
+    @spot = SkiSpot.find(params[:id])
   end
 end

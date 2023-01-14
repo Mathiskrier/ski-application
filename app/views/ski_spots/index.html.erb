@@ -1,6 +1,8 @@
-
+<h1>all spots</h1>
 <div>
 <% @spots.each do |spot|%>
+<%= link_to  ski_spot_reports_path(spot) do %>
 <p><%= spot.location_name %></p>
+<% end %>
 <% end %>
 </div>
