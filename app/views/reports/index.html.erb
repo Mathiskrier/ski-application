@@ -1,4 +1,5 @@
 <h1>all reports for this resort</h1>
+<%= link_to "add report", new_ski_spot_report_path %>
 <% @reports.each do |report| %>
 <p><%= report.comment %></p>
 <% end %>
