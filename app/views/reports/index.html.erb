@@ -1,5 +1,9 @@
-<h1>all reports for this resort</h1>
+<div class="body-container container-fluid">
+<h1 class="font-bold text-2xl container-xl">Reports for <%= @ski_spot.location_name %></h1>
 <%= link_to "add report", new_ski_spot_report_path %>
 <% @reports.each do |report| %>
 <p><%= report.comment %></p>
+<p>Reported by:<%= report.user.username %></p>
+<p>Reported on <%= report.created_at %></p>
 <% end %>
+</div>
