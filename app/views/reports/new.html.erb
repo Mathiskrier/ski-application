@@ -1,0 +1,6 @@
+<h1>new report? create here</h1>
+ <!--i might add user to the form--->
+ <%= simple_form_for [ @user, @ski_spot, @report] do |f| %>
+ <%= f.input :comment, placeholder:"How are the conditions at the moment?", label: false%>
+ <%= f.submit %>
+ <% end %>

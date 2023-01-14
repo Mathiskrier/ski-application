@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   resources :pages
   resources :ski_spots, only: [:index, :show] do
-    resources :reports, only: [:index]
+    resources :reports, only: [:index, :new, :create]
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
