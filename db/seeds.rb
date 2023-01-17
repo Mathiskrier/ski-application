@@ -11,13 +11,13 @@ puts "old spots destroyed"
 Report.destroy_all
 Report.reset_pk_sequence
 puts "old reports destroyed"
-axamer = SkiSpot.create(location_name: 'Axamer Lizum')
-patscher = SkiSpot.create(location_name: 'Patscherkofel')
-nordkette = SkiSpot.create(location_name: 'Nordkette')
-glungezer = SkiSpot.create(location_name: 'Glungezer')
-schlick = SkiSpot.create(location_name: 'Schlick2000')
-seefeld = SkiSpot.create(location_name: 'Seefeld')
-kühtai = SkiSpot.create(location_name: 'Kühtai')
+axamer = SkiSpot.create(location_name: 'Axamer Lizum', region: 'tirol')
+patscher = SkiSpot.create(location_name: 'Patscherkofel', region: 'tirol')
+nordkette = SkiSpot.create(location_name: 'Nordkette', region: 'tirol')
+glungezer = SkiSpot.create(location_name: 'Glungezer', region: 'tirol')
+schlick = SkiSpot.create(location_name: 'Schlick2000', region: 'tirol')
+seefeld = SkiSpot.create(location_name: 'Seefeld', region: 'tirol')
+kühtai = SkiSpot.create(location_name: 'Kühtai', region: 'tirol')
 
 puts "skispots created"
 
