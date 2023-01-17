@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root to: "pages#home"
 
   resources :pages
+  resources :users, only: [:show]
   resources :ski_spots, only: [:index, :show] do
   resources :reports, only: [:index, :new, :create]
   end

@@ -1,0 +1,8 @@
+<div>
+  <h1><%= @user.username %></h1>
+  <p><%= @user.last_name %></p>
+  <p><%= @user.first_name %></p>
+</div>
+<div>
+  <%= link_to "edit my profile",  edit_user_registration_path, class: "btn btn-default btn-sm" %>
+</div>
