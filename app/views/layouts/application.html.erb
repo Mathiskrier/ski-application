@@ -10,14 +10,14 @@
   </head>
 
   <body>
-    <%= render "shared/navbar" %>
-
-
     <!---this was the instruction for the notice and alert--->
-    <div class="container-fluid">
-      <%= yield %>
-    </div>
-    <%= notice %>
-    <%= alert %>
+      <div>
+        <% if user_signed_in? %>
+          <%= render "shared/navbar" %>
+        <% end %>
+        <%= yield %>
+        <!--%= notice %>
+        <%= alert %-->
+      </div>
   </body>
 </html>
