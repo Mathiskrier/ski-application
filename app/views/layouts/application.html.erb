@@ -11,13 +11,13 @@
 
   <body>
     <!---this was the instruction for the notice and alert--->
-      <div>
+      <!--div-->
         <% if user_signed_in? %>
           <%= render "shared/navbar" %>
         <% end %>
         <%= yield %>
         <!--%= notice %>
         <%= alert %-->
-      </div>
+      <!--/div-->
   </body>
 </html>

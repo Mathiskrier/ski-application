@@ -1,11 +1,22 @@
 
 <div class="black-bg main-container">
   <div class="centered-div-home white-text">
-    <h1>WELCOME TO SPOTCHECK</h1>
-    <p>TO CONTINUE ON THIS APPLICATION YOU HAVE TO LOGIN</p>
-    <!--replacing the login button--->
-      <%= render "shared/login" %>
-    <!---%= link_to "LOG IN", new_user_session_path %--->
-    <p>If you are new to Spotcheck you can create your account <%= link_to "here", new_user_registration_path %></p>
+    <div class="d-flex flex-column">
+      <div class="mx-auto">
+        <h1>Spot-check</h1>
+      </div>
+      <div class="mx-auto">
+        <h2>Skiing - Snowboarding</h2>
+      </div>
+      <div class="mx-auto">
+        <%= image_tag "skiapp-loginpage-bild.png", height: 300 %>
+      </div>
+      <div class="mx-auto text-center">
+        <!--replacing the login button--->
+        <!--%= render "shared/login" %-->
+        <p><%= link_to "LOG IN", new_user_session_path, class: "btn btn-outline-primary" %></p>
+        <p>If you are new to Spotcheck you can create your account <%= link_to "here", new_user_registration_path, class: "btn btn-outline-primary" %></p>
+      </div>
+    </div>
   </div>
 </div>
