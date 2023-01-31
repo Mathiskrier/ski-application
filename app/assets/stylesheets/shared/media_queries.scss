@@ -3,13 +3,13 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   /* CSS styles here will be applied to iPhone screens */
   body {
-    width: 90%;
+    width: 100%;
   }
   .centered-div-home {
-    width: 90%;
+    width: 100%;
   }
   img {
     object-fit: contain;
-    max-width: 90%;
+    max-width: 100%;
   }
 }

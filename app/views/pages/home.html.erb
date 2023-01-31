@@ -1,21 +1,24 @@
 
-<div class="black-bg main-container">
+<div class="main-container">
   <div class="centered-div-home white-text">
     <div class="d-flex flex-column">
       <div class="mx-auto">
         <h1>Spot-check</h1>
       </div>
       <div class="mx-auto">
-        <h2>Skiing - Snowboarding</h2>
+        <h5>Skiing - Snowboarding</h2>
       </div>
-      <div class="mx-auto">
+      <div class="mx-aut0">
         <%= image_tag "skiapp-loginpage-bild.png", height: 300 %>
       </div>
-      <div class="mx-auto text-center">
+       <div class="mx-auto text-center">
+        <h2>Check your spot before you go</h2>
+      </div>
+      <div class="mx-auto text-center p-4">
         <!--replacing the login button--->
         <!--%= render "shared/login" %-->
         <p><%= link_to "LOG IN", new_user_session_path, class: "btn btn-outline-primary" %></p>
-        <p>If you are new to Spotcheck you can create your account <%= link_to "here", new_user_registration_path, class: "btn btn-outline-primary" %></p>
+        <p><%= link_to "SIGN-UP", new_user_registration_path, class: "btn btn-outline-primary" %></p>
       </div>
     </div>
   </div>
