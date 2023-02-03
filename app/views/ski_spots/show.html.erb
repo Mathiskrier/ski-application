@@ -1,3 +1,12 @@
+<div class="main-container white-text">
+<!---this view is to index the spots by their region--->
 <div>
-<h1><%= @spot.location_name %></h1>
+  <% @spotsregion.each do |spot| %>
+    <%= link_to ski_spot_reports_path(spot) do %>
+    <div class="d-flex flex-column">
+      <%= spot.location_name %>
+    </div>
+    <% end %>
+  <% end %>
+</div>
 </div>
