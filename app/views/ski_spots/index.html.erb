@@ -1,8 +1,13 @@
 <div class="main-container white-text">
-<!---h1>Pick a region and choose your spot</h1--->
+<!---this view is to index the spots by their region--->
 <div>
+  <h1>Regions</h1>
   <% @regions.each do |region| %>
-    <%= region %>
+    <%= link_to ski_spot_path(region) do %>
+      <div class="d-flex flex-column">
+        <%= region %>
+      </div>
+    <% end %>
   <% end %>
 </div>
 </div>

@@ -3,7 +3,7 @@
 <%= link_to "add report", new_ski_spot_report_path %>
 <% @reports.each do |report| %>
 <p><%= report.comment %></p>
-<p>Reported by:<%= report.user.username %></p>
-<p>Reported on <%= report.created_at %></p>
+<!--p>Reported by:<%= report.user.username %></p>
+<p>Reported on <%= report.created_at %></p-->
 <% end %>
 </div>
