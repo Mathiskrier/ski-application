@@ -19,6 +19,13 @@ schlick = SkiSpot.create(location_name: 'Schlick2000', region: 'tirol')
 seefeld = SkiSpot.create(location_name: 'Seefeld', region: 'tirol')
 kühtai = SkiSpot.create(location_name: 'Kühtai', region: 'tirol')
 
+brandnertal = SkiSpot.create(location_name: 'brandnertal', region: 'vorarlberg')
+damüls = SkiSpot.create(location_name: 'damüls', region: 'vorarlberg')
+mellau = SkiSpot.create(location_name: 'mellau', region: 'vorarlberg')
+silvretta = SkiSpot.create(location_name: 'silvretta', region: 'vorarlberg')
+montafon = SkiSpot.create(location_name: 'montafon', region: 'vorarlberg')
+sonnenkopf = SkiSpot.create(location_name: 'sonnenkopf', region: 'vorarlberg')
+
 puts "skispots created"
 
 report1 = Report.create(comment: "very good conditions today, a little bit icy tough!", user_id: 4, ski_spot_id: 1)
