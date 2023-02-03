@@ -1,11 +1,8 @@
-<div class="container-sm">
-<h1>Pick a region and choose your spot</h1>
+<div class="main-container white-text">
+<!---h1>Pick a region and choose your spot</h1--->
 <div>
-<% @spots.each do |spot|%>
-<%= link_to  ski_spot_reports_path(spot) do %>
-<div class="spotname-container">
-<p><%= spot.location_name %></p> : <p><%= spot.region %></p>
+  <% @regions.each do |region| %>
+    <%= region %>
+  <% end %>
 </div>
-<% end %>
-<% end %>
 </div>
