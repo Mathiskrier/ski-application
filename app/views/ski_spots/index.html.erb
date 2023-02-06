@@ -3,19 +3,19 @@
   <div class="centered-div-home">
     <h1>Regions</h1>
     <% @regions.each do |region| %>
-      <!---%= link_to ski_spot_path(region)  do %--->
-        <div class="d-flex flex-column">
-          <button class="btn btn-primary" data-controller="resort-list" data-action="click->resort-list#show">
+        <div class="d-flex flex-column" data-controller="resort-list">
+          <button class="btn btn-primary" data-action="click->resort-list#show">
             <%= region %>
           </button>
-          <ul>
+          <ul data-resort-list-target="spotList" class="d-none">
               <!--this list should contain all the spots for the given region--->
               <% @spots.where(region: region).each do |spot| %>
-                <li><%= spot.location_name %></li>
+                <%= link_to ski_spot_reports_path(spot) do %>
+                  <li><%= spot.location_name %></li>
+                <% end %>
               <% end %>
           </ul>
         </div>
-      <!---% end %--->
     <% end %>
   </div>
 </div>
