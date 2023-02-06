@@ -8,7 +8,12 @@
           <button class="btn btn-primary" data-controller="resort-list" data-action="click->resort-list#show">
             <%= region %>
           </button>
-
+          <ul>
+              <!--this list should contain all the spots for the given region--->
+              <% @spots.where(region: region).each do |spot| %>
+                <li><%= spot.location_name %></li>
+              <% end %>
+          </ul>
         </div>
       <!---% end %--->
     <% end %>

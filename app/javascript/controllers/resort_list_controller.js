@@ -9,5 +9,6 @@ export default class extends Controller {
   //data-action=click->resort-list#show
   show() {
     console.log("connected with button!")
+
   }
 }
