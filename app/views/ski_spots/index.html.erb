@@ -1,13 +1,16 @@
 <div class="main-container white-text">
-<!---this view is to index the spots by their region--->
-<div>
-  <h1>Regions</h1>
-  <% @regions.each do |region| %>
-    <%= link_to ski_spot_path(region) do %>
-      <div class="d-flex flex-column">
-        <%= region %>
-      </div>
+  <!---this view is to index the spots by their region--->
+  <div class="centered-div-home">
+    <h1>Regions</h1>
+    <% @regions.each do |region| %>
+      <!---%= link_to ski_spot_path(region)  do %--->
+        <div class="d-flex flex-column">
+          <button class="btn btn-primary" data-controller="resort-list" data-action="click->resort-list#show">
+            <%= region %>
+          </button>
+
+        </div>
+      <!---% end %--->
     <% end %>
-  <% end %>
-</div>
+  </div>
 </div>
