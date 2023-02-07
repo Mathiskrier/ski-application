@@ -7,7 +7,7 @@
           <button class="btn btn-primary" data-action="click->resort-list#show">
             <%= region %>
           </button>
-          <ul data-resort-list-target="spotList" class="d-none">
+          <ul data-resort-list-target="spotList" class="hidden list">
               <!--this list should contain all the spots for the given region--->
               <% @spots.where(region: region).each do |spot| %>
                 <%= link_to ski_spot_reports_path(spot) do %>
