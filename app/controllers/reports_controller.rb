@@ -2,7 +2,7 @@ class ReportsController < ApplicationController
   before_action :get_ski_spot
   #before_action :set_report
   def index
-    @reports = @ski_spot.reports
+    @reports = @ski_spot.reports.order(created_at: :desc)
     #@reports = Report.all
   end
   def new
