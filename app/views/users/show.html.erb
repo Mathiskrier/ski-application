@@ -2,6 +2,7 @@
   <h1><%= @user.username %></h1>
   <p><%= @user.last_name %></p>
   <p><%= @user.first_name %></p>
+  <%= image_tag(@user.avatar, alt: "avatar", class: "avatar", id: "avatar") %>
 </div>
 <div>
   <%= link_to "edit my profile",  edit_user_registration_path, class: "btn btn-primary" %>

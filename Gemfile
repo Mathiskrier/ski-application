@@ -79,3 +79,5 @@ end
 gem "devise"
 #to reset the ids and make them start at 0 again when deleted a table
 gem 'activerecord-reset-pk-sequence'
+
+gem 'cloudinary', '~> 1.18', '>= 1.18.1'
