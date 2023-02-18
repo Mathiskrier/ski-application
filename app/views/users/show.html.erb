@@ -1,9 +1,19 @@
-<div>
-  <h1><%= @user.username %></h1>
-  <p><%= @user.last_name %></p>
-  <p><%= @user.first_name %></p>
-  <%= image_tag(@user.avatar, alt: "avatar", class: "avatar", id: "avatar") %>
-</div>
-<div>
-  <%= link_to "edit my profile",  edit_user_registration_path, class: "btn btn-primary" %>
+<div class="main-container">
+  <div class="centered-div-home white-text">
+    <div>
+      <h1><%= @user.username %></h1>
+      <% if @user.avatar.attached? %>
+        <%= image_tag(@user.avatar, alt: "avatar", class: "avatar", id: "avatar") %>
+      <% else %>
+        <%= image_tag "avatar-grey.jpeg", alt: "avatar", class: "avatar" %>
+      <% end %>
+      <!--%= image_tag(@user.avatar, alt: "avatar", class: "avatar", id: "avatar") %-->
+      <p><%= @user.last_name %></p>
+      <p><%= @user.first_name %></p>
+    </div>
+    <div>
+      <%= link_to "Back", request.referrer, class: "btn btn-primary" %>
+      <%= link_to "edit my profile",  edit_user_registration_path, class: "btn btn-primary" %>
+    </div>
+  </div>
 </div>

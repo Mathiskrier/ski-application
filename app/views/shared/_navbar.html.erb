@@ -3,6 +3,8 @@
     <% if user_signed_in? %>
       <%= link_to "logout", destroy_user_session_path, data: {turbo_method: :delete} %>
       <%= link_to "show my profile", user_path(current_user)%>
+      <%= link_to "spots", ski_spots_path %>
+
     <% end %>
   </div>
 </div>

@@ -1,6 +1,11 @@
 .avatar {
-  width: 40px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 1px $pink;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 .avatar-large {
   width: 56px;
