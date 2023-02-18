@@ -1,7 +1,8 @@
 <div class="main-container white-text">
   <!---%= render "reports/new" %-->
   <h1>Reports for <%= @ski_spot.location_name %></h1>
-  <%= link_to "back", ski_spots_path, class: "btn btn-primary" %>
+  <%= link_to "Back", request.referrer, class: "btn btn-primary" %>
+  <!---%= link_to "back", ski_spots_path, class: "btn btn-primary" %--->
   <%= link_to "add report", new_ski_spot_report_path, class: "btn btn-primary" %>
   <div class="comment-box">
     <% @reports.each do |report| %>
