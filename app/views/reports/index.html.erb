@@ -8,6 +8,11 @@
       <div class="comment">
         <div class="comment-details row">
           <div class="col-sm-4">
+            <% if report.user.avatar.attached? %>
+              <%= image_tag(report.user.avatar, alt: "avatar", class: "avatar", id: "avatar") %>
+            <% else %>
+              <%= image_tag "avatar-grey.jpeg", alt: "avatar", class: "avatar" %>
+            <% end %>
             <p><%= report.user.username %></p>
           </div>
           <div class="col-sm-4">
