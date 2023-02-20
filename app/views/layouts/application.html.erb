@@ -12,6 +12,7 @@
   <body>
     <!--- https://hackernoon.com/how-to-customize-devise-authentication-with-active-storage-5t1b34wz--->
       <!--div-->
+      <div>
         <% if user_signed_in? %>
           <%= render "shared/navbar" %>
         <% end %>
@@ -22,6 +23,7 @@
           <p class="alert alert-danger"><%= alert %></p>
         <% end %>
         <%= yield %>
+      </div>
 
 
   </body>

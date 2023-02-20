@@ -6,12 +6,30 @@
   background-color: black;
 }
 
+body {
+  padding-top: 60px; /* Change 60px to the height of your navbar */
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  max-width: 400px;
+  //width: 100%;
+}
+
 .centered-div-home {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  height: 100vh;
+  overflow-y: auto;
+
 }
 
 
@@ -40,9 +58,6 @@
 
 }
 
-.navbar-cobtainer {
-
-}
 .hidden {
   display: none;
 }
