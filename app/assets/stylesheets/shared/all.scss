@@ -4,10 +4,11 @@
   width: 100%;
   min-height: 100vh;
   background-color: black;
+  //padding-top: 40px;
 }
 
 body {
-  padding-top: 60px; /* Change 60px to the height of your navbar */
+  padding-top: 40px; /* Change 60px to the height of your navbar */
 }
 
 .auth-container {
@@ -23,12 +24,14 @@ form {
 }
 
 .centered-div-home {
+  margin-top: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 100vh;
   overflow-y: auto;
+
 
 }
 
