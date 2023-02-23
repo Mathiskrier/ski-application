@@ -4,18 +4,22 @@
   width: 100%;
   min-height: 100vh;
   background-color: black;
-  //padding-top: 40px;
-}
+  padding-top: 40px;
+  //position: fixed;
 
-body {
-  padding-top: 40px; /* Change 60px to the height of your navbar */
+
+
 }
+ body {
+  height: 100%;
+ }
 
 .auth-container {
+  padding-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 form {
@@ -24,15 +28,18 @@ form {
 }
 
 .centered-div-home {
-  margin-top: 50px;
+  //the margin-top is where the scrollable container is disappearing on the top
+  margin-top: 90px;
+  padding-top: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 100vh;
-  overflow-y: auto;
-
-
+  max-height: calc(100vh - 40px);
+  //overflow-y: auto;
+  position: fixed;
+  z-index: 1000;
+  width: 80%;
 }
 
 
