@@ -2,14 +2,17 @@
 /* Target iPhone screens */
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   /* CSS styles here will be applied to iPhone screens */
+
+  html {
+    font-size: 10px;
+  }
   body {
     //width: 100%;
+    //font-size: 10px;
   }
   .centered-div-home {
     width: 80%;
   }
-  img {
-    object-fit: contain;
-    max-width: 100%;
-  }
+
+
 }
