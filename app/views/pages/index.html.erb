@@ -1,11 +1,17 @@
 <div class="main-container">
-  <div class="black-bg white-text mx-auto text-center">
-    <h1>Hey <%= @name.username %></h1>
-    <h3>What is Spot-check?</h3>
-    <div class="div-box-green-border mx-auto">
+  <div class="intro-div white-text mx-auto">
+    <div>
+      <h1>Hey <%= @name.username %></h1>
+    </div>
+    <div>
+      <h3>What is Spot-check?</h3>
+    </div>
+    <div class="intro-text-box mx-auto">
       <p>Spot-check is the place where a community comes together. It helps to plan your day in the mountains. Use the reports of previous days from community members to decide where you should go. Everyone can share their experience in a resort, wether it’s slope skiing or freeriding. Publish your personal impressions of the conditions e.g. weather, snow conditions or crowdiness. Add a picture and there you go.</p>
       <p>Enjoy!</p>
     </div>
-    <%= link_to "Proceed to ski area", ski_spots_path, class: "btn btn-primary" %>
+    <div>
+      <%= link_to "Proceed to ski area", ski_spots_path, class: "btn btn-primary" %>
+    </div>
   </div>
 </div>
