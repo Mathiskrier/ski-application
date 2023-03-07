@@ -1,21 +1,24 @@
 <div class="main-container white-text">
   <!---this view is to index the spots by their region--->
-  <div class="centered-div-home">
-    <h1>Regions</h1>
-    <% @regions.each do |region| %>
-        <div data-controller="resort-list" class="d-flex flex-column">
-          <button class="btn btn-primary" data-action="click->resort-list#show">
-            <%= region %>
-          </button>
-          <ul data-resort-list-target="spotList" class="hidden list">
-              <!--this list should contain all the spots for the given region--->
-              <% @spots.where(region: region).each do |spot| %>
-                <%= link_to ski_spot_reports_path(spot) do %>
-                  <li><%= spot.location_name %></li>
+  <div class="spots-index-div">
+
+    <div class="spots-index-buttons-container">
+      <h2>Regions</h1>
+      <% @regions.each do |region| %>
+          <div data-controller="resort-list" class="d-flex flex-column">
+            <button class="btn btn-primary" data-action="click->resort-list#show">
+              <%= region %>
+            </button>
+            <ul data-resort-list-target="spotList" class="hidden centered-list">
+                <!--this list should contain all the spots for the given region--->
+                <% @spots.where(region: region).each do |spot| %>
+                  <%= link_to ski_spot_reports_path(spot) do %>
+                    <li><%= spot.location_name %></li>
+                  <% end %>
                 <% end %>
-              <% end %>
-          </ul>
-        </div>
-    <% end %>
+            </ul>
+          </div>
+      <% end %>
+    </div>
   </div>
 </div>
