@@ -5,14 +5,31 @@
   border-radius: 10px;
   width: 100%;
   max-height: 70%;
-
 }
+
 .comment {
   background-color: black;
   border: 1px solid $pink;
-
 }
 
 .comment-details {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+}
+
+.comment-text {
+  padding: 10px;
+  font-size: 0.5rem;
+}
+
+.comment-username {
+  display: flex;
+  align-items: center;
+}
+
+.comment-time {
+  display: flex;
+  align-items: center;
 }

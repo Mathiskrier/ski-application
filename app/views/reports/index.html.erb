@@ -8,20 +8,24 @@
     <div class="comment-box">
       <% @reports.each do |report| %>
         <div class="comment">
-          <div class="comment-details row">
-            <div class="col-sm-4">
+          <div class="comment-details">
+            <div class="comment-avatar">
               <% if report.user.avatar.attached? %>
                 <%= image_tag(report.user.avatar, alt: "avatar", class: "avatar", id: "avatar") %>
               <% else %>
                 <%= image_tag "avatar-grey.jpeg", alt: "avatar", class: "avatar" %>
               <% end %>
+            </div>
+            <div class="comment-username">
               <p><%= report.user.username %></p>
             </div>
-            <div class="col-sm-4">
+            <div class="comment-time">
               <p><%= time_ago_in_words(report.created_at) %></p>
             </div>
-            </div>
+          </div>
+          <div class="comment-text">
             <p><%= report.comment %></p>
+          </div>
         </div>
       <% end %>
     </div>
