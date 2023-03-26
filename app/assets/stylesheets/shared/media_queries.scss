@@ -4,7 +4,7 @@
   /* CSS styles here will be applied to iPhone screens */
 
   html {
-    font-size: 10px;
+    font-size: 1rem;
   }
   body {
     //width: 100%;
@@ -26,6 +26,13 @@
     width: 60px;
     height: 60px;
    }
+
+   // spots listing page
+
+  ul.centered-list li {
+    margin: 5% 0;
+
+  }
 
 
 }
